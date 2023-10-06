@@ -22,7 +22,7 @@ export default function CharacterSidebar({ characterData }) {
           <ul>
             {marvelCharacters.map((character) => (
               <li key={character.name}>
-                <Link key={character.id} to={`/${character.id}`}>
+                <Link key={character.id} to={`/${character.id}/overview`}>
                   <div className="character-tile">{character.name}</div>
                 </Link>
               </li>
@@ -33,7 +33,6 @@ export default function CharacterSidebar({ characterData }) {
           <ul>
             {capcomCharacters.map((character) => (
               <li key={character.name}>
-                {/* BUG: Causes characters with spaces in name/ID to not work */}
                 <Link key={character.id} to={`/${character.id}`}>
                   <div className="character-tile">{character.name}</div>
                 </Link>
