@@ -1,50 +1,129 @@
 /* Border box model  */
 #root,
 body {
-  /* padding: 0; */
-  /* margin: 0; */
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 html {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  /* box-sizing: inherit; */
-  /* padding: 0px; */
-  /* margin: 0px; */
+  box-sizing: inherit;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  /* padding: 0; */
-  /* margin: 0; */
-  /* font-family: var(--ubuntu); */
-  /* color: white; */
-  /* font-size: var(--font-size); */
+  padding: 0;
+  margin: 0;
+  font-family: var(--ubuntu);
+  color: white;
+  font-size: var(--font-size);
+  height: 100vh;
 }
 
 h1,
-h2,
 h3 {
-  /* margin: 0; */
+  margin: 0px;
+}
+
+h2{
+  margin: .5em;
+  align-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+#marvel{
+  border: 2px solid Red;
+  border-radius: 4px;
+}
+
+#capcom{
+  border: 2px solid blue;
+  border-radius: 4px;
+}
+
+img{
+  padding: 0;
+  margin: 0;
 }
 
 .background-image {
-  /* border: 10px solid blue; */
+  background-image: url('../assets/umvcBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
 }
 
 #character-details {
+  display: flex;
+  flex-direction: row;
   background-color: black;
   color: white;
   opacity: .9;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  width: 70vw;
+  height: 80vh;
 }
 
 #character-selector {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
   color: white;
   opacity: .9;
+  width: 15em;
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+
+#outlet{
+  width: 100px;
+  height: 100px;
+  border: 1px solid yellow;
+}
+
+#logo{
+  width: 150px;
+}
+
+li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.character-tile{
+  background-color: rgb(43, 43, 43);
+  color: white;
+  border: 3px solid white;
+  border-radius: 6px;
+  padding: .3em;
+  margin: .5em;
+  height: 2.5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* TODO: Figure out how to make align to right side and look good*/
+
+#character-details img{
   border: 1px solid white;
 }
+
