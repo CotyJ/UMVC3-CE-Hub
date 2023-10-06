@@ -9,9 +9,13 @@ module.exports = {
     filename: 'bundle.js',
     clean: true,
     assetModuleFilename: '[name][ext]',
+    publicPath: '/'
   },
-  devtool: 'source-map', // not needed yet
+  // devtool: 'source-map', // not needed yet
   devServer: {
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+  },
     static: {
       directory: path.resolve(__dirname, 'dist')
     },
@@ -19,7 +23,7 @@ module.exports = {
     open: false,
     hot: true,
     compress: true,
-    // historyApiFallback: true,  // not needed yet
+    historyApiFallback: true,
   },
   module: {
     rules: [
