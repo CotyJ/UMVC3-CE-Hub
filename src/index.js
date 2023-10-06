@@ -6,6 +6,7 @@ import CharacterDetails from './routes/CharacterDetails';
 import CharacterSidebar from './routes/CharacterSidebar';
 import ErrorPage from './ErrorPage';
 import './styles/index.css';
+// import './assets/fonts/BADABB__.TTF';
 
 import App from './routes/App';
 
