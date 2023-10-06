@@ -27,12 +27,21 @@ body {
   height: 100vh;
 }
 
+
+@font-face {
+
+  font-family: 'Light';
+  src: local('Badaboom') url('../assets//fonts/BADABB__.TTF') format('truetype');
+}
+
 h1,
 h3 {
   margin: 0px;
+  font-family: 'Badaboom';
 }
 
 h2{
+  font-family: 'Badaboom';
   margin: .5em;
   align-content: center;
   text-align: center;
@@ -126,4 +135,3 @@ a{
 #character-details img{
   border: 1px solid white;
 }
-
