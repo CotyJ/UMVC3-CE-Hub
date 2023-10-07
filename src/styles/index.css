@@ -147,3 +147,33 @@ a{
   display: flex;
   flex-direction: column;
 }
+
+
+
+.health {
+  border: 2px solid red;
+}
+
+.assists {
+  border: 2px solid yellow;
+}
+
+.command-normals {
+  border: 2px solid blueviolet;
+}
+
+.special-moves {
+  border: 2px solid green;
+}
+
+.hyper-combos {
+  border: 2px solid lawngreen;
+}
+
+
+
+
+
+
+
+
