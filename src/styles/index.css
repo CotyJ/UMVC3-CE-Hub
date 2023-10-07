@@ -27,9 +27,7 @@ body {
   height: 100vh;
 }
 
-
 @font-face {
-
   font-family: 'Light';
   src: local('Badaboom') url('../assets//fonts/BADABB__.TTF') format('truetype');
 }
@@ -40,28 +38,27 @@ h3 {
   font-family: 'Badaboom';
 }
 
-h2{
+h2 {
   font-family: 'Badaboom';
-  margin: .5em;
+  margin: 0.5em;
   align-content: center;
   text-align: center;
   background-color: black;
 }
 
-#marvel{
+#marvel {
   border: 2px solid Red;
   border-radius: 4px;
 }
 
-#capcom{
+#capcom {
   border: 2px solid blue;
   border-radius: 4px;
 }
 
-img{
+img {
   padding: 0;
   margin: 0;
-
 }
 
 .background-image {
@@ -80,7 +77,7 @@ img{
   flex-direction: row;
   background-color: black;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   width: 80vw;
   height: 80vh;
 }
@@ -90,42 +87,41 @@ img{
   flex-direction: column;
   scroll-behavior: smooth;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   width: 15em;
   overflow-y: scroll;
   max-height: 80vh;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 #character-selector::-webkit-scrollbar {
   display: none;
 }
 
-#outlet{
+#outlet {
   width: 100px;
   height: 100px;
   border: 1px solid yellow;
 }
 
-#logo{
+#logo {
   width: 15em;
 }
 
-li{
+li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.character-tile{
+.character-tile {
   background-color: rgb(43, 43, 43);
   color: white;
   border: 3px solid white;
   border-radius: 6px;
-  padding: .3em;
-  margin: .5em;
+  padding: 0.3em;
+  margin: 0.5em;
   height: 2.5em;
   text-align: center;
   align-items: center;
@@ -133,22 +129,20 @@ li{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /* TODO: make image align to right side and look good*/
-#character-details img{
+#character-details img {
   border: 1px solid white;
   /* width: 200px; */
 }
 
-.character-info{
+.character-info {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .health {
   border: 2px solid red;
@@ -170,10 +164,15 @@ a{
   border: 2px solid lawngreen;
 }
 
+/* TODO: style buttons for when images exist */
+.controller-button-inputs {
+  display: flex;
+  flex-direction: row;
+}
 
-
-
-
-
-
-
+.controller-input-button {
+  padding: 1px;
+  /* margin: 1px; */
+  border: 1px solid white;
+  border-radius: 2px;
+}
