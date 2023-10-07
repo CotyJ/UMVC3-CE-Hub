@@ -19,14 +19,51 @@ export default function CharacterMoves({ moves }) {
 
       <div className="command-normals">
         <div>Command Normals</div>
+        {command_normals.map((cnormal) => (
+          <div key={`${cnormal.name}`}>
+            <div>{cnormal.name}</div>
+            <div className="controller-button-inputs">
+              {cnormal.input.map((input, index) => (
+                <div key={index} className="controller-input-button">
+                  {input}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="special-moves">
         <div>Special Moves</div>
+        {specials.map((special) => (
+          <div key={`${special.name}`}>
+            <div>{special.name}</div>
+            <div className="controller-button-inputs">
+              {special.input.map((input, index) => (
+                <div key={index} className="controller-input-button">
+                  {input}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="hyper-combos">
         <div>Hyper Combos</div>
+
+        {hypers.map((hyper) => (
+          <div key={`${hyper.name}`}>
+            <div>{hyper.name}</div>
+            <div className="controller-button-inputs">
+              {hyper.input.map((input, index) => (
+                <div key={index} className="controller-input-button">
+                  {input}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
