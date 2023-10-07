@@ -9,15 +9,15 @@ module.exports = {
     filename: 'bundle.js',
     clean: true,
     assetModuleFilename: '[name][ext]',
-    publicPath: '/'
+    publicPath: '/',
   },
-  // devtool: 'source-map', // not needed yet
+  devtool: 'source-map', // not needed yet
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "*"
-  },
+      'Access-Control-Allow-Origin': '*',
+    },
     static: {
-      directory: path.resolve(__dirname, 'dist')
+      directory: path.resolve(__dirname, 'dist'),
     },
     port: 3000,
     open: false,
@@ -29,10 +29,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ]
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(js|jsx)$/,
@@ -40,17 +37,15 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react'
-            ]
-          }
-        }
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-      }
+      },
+
     ],
   },
   plugins: [
