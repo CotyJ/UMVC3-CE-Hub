@@ -9,15 +9,10 @@ export default function CharacterSidebar({ characterData }) {
     (character) => character.series === 'capcom'
   );
 
-  // console.log(characterData);
-  // console.log(marvelCharacters);
-  // console.log(capcomCharacters);
-
   return (
     <>
       <div id="character-selector">
         <div>
-
           <h2 id="marvel">Marvel</h2>
           <ul>
             {marvelCharacters.map((character) => (
@@ -39,9 +34,8 @@ export default function CharacterSidebar({ characterData }) {
               </li>
             ))}
           </ul>
-
         </div>
       </div>
     </>
   );
-};
+}
