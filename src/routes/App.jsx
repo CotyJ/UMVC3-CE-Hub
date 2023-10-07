@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
-import CharacterSidebar from './CharacterSidebar';
-import Header from './Header';
+// import CharacterSidebar from './CharacterSidebar';
+// import Header from './Header';
 import ErrorPage from '../ErrorPage';
 import Layout from './Layout';
 import CharacterDetails from './CharacterDetails';
@@ -18,13 +18,31 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout characterData={characterData} />}>
-          {characterData.map((character) => (<Route key={character.id} path={`/${character.id}`} element={<CharacterDetails character={character} errorElement={ErrorPage}/>}>
-            <Route index key={character.overview} path={`/${character.id}/overview`} element={<CharacterOverview />} ></Route>
-            <Route key={character.moves} path={`/${character.id}/moves`} element={<CharacterMoves />} ></Route>
-            <Route key={character.changelog} path={`/${character.id}/changelog`} element={<CharacterChangelog />} ></Route>
-          </Route>))}
+          {characterData.map((character) => (<Route  key={character.id} path={`/${character.id}`} element={ <CharacterDetails character={character}
+                  errorElement={ErrorPage}
+                />
+              }
+            >
+              <Route
+                index
+                key={character.id}
+                path={`/${character.id}/overview`}
+                element={<CharacterOverview overview={character.overview} author={character.author}/>}
+              ></Route>
+              <Route
+                key={character.id}
+                path={`/${character.id}/moves`}
+                element={<CharacterMoves moves={character.moves}/>}
+              ></Route>
+              <Route
+                key={character.id}
+                path={`/${character.id}/changelog`}
+                element={<CharacterChangelog changelog={character.changelog}/>}
+              ></Route>
+            </Route>
+          ))}
         </Route>
       </Routes>
     </BrowserRouter>
   );
-};
+}
