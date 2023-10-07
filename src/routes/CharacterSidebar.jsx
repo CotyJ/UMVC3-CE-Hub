@@ -33,7 +33,7 @@ export default function CharacterSidebar({ characterData }) {
           <ul>
             {capcomCharacters.map((character) => (
               <li key={character.name}>
-                <Link key={character.id} to={`/${character.id}`}>
+                <Link key={character.id} to={`/${character.id}/overview`}>
                   <div className="character-tile">{character.name}</div>
                 </Link>
               </li>
