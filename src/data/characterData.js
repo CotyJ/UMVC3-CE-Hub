@@ -191,7 +191,31 @@ const characterData = [
     "series": "capcom",
     "author": "Tabs",
     "image": "",
-    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "moves": {
+      "health": "1,000,000",
+      "assists": [
+        {"alpha": "Shoryuken"},
+        {"beta": "Hadouken"},
+        {"gamma": "Tatsumaki Senpukyaku"},
+      ],
+      "command_normals": [
+        {"name": "Inazuma Kick", "input": ["6", "M"]},
+        {"name": "Roundhouse Kick", "input": ["6", "H"]},
+      ],
+      "specials": [
+        {"name": "Hadouken (Air Ok)", "input": ["2", "3", "6", "A"]},
+        {"name": "Tatsumaki Senpukyaku (Air Ok)", "input": ["2","1","4", "A"]},
+        {"name": "Shoryuken (Air Ok)", "input": ["6","2","3", "A"]},
+        {"name": "Quick Step", "input": ["A", "S"]},
+      ],
+      "hypers": [
+        {"name": "Shoryureppa", "input": ["2", "3", "6", "A", "A"]},
+        {"name": "Guren Senpukyaku (Air Ok)", "input": ["2", "3", "6", "A"]},
+        {"name": "Shippu Jinrai Ken (L/M/H Have Different Variations)", "input": ["2", "3", "6", "A"]},
+        {"name": "Hadouken (Level 3 Hyper Combo)", "input": ["2", "3", "6", "A"]},
+        // {},
+      ],
+      },
     "overview": "Lorem ipsum dolor sit",
     "changelog": []
   },
