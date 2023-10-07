@@ -1,16 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-
-// Assets so far
-import CharacterDetails from './routes/CharacterDetails';
-import CharacterSidebar from './routes/CharacterSidebar';
-import ErrorPage from './ErrorPage';
 import './styles/index.css';
+
+// FIXME: no loader for ttf's
 // import './assets/fonts/BADABB__.TTF';
 
 import App from './routes/App';
-
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
