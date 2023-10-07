@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function CharacterMoves() {
+export default function CharacterMoves({ moves }) {
+  var characterMovelist = moves;
+
+  console.log(moves);
   return (
-    <div>CharacterMoves</div>
+    <div>
+      {/* {moves} */}
+    </div>
   )
 }
