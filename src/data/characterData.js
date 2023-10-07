@@ -194,9 +194,9 @@ const characterData = [
     "moves": {
       "health": "1,000,000",
       "assists": [
-        {"alpha": "Shoryuken"},
-        {"beta": "Hadouken"},
-        {"gamma": "Tatsumaki Senpukyaku"},
+        "Shoryuken",
+        "Hadouken",
+        "Tatsumaki Senpukyaku",
       ],
       "command_normals": [
         {"name": "Inazuma Kick", "input": ["6", "M"]},
