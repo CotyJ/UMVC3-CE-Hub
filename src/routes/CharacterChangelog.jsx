@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function CharacterChangelog() {
+export default function CharacterChangelog({ changelog }) {
+  const characterChangelog = changelog;
+
   return (
-    <div>CharacterChangelog</div>
+    <div>
+      {changelog}
+    </div>
   )
 }
