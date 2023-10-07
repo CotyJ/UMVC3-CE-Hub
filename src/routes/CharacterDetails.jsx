@@ -1,30 +1,33 @@
 import React from 'react';
 
-import CharacterChangelog from './CharacterChangelog';
-import CharacterMoves from './CharacterMoves';
-import CharacterOverview from './CharacterOverview';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 export default function CharacterDetails({ character }) {
+
   //REFACTOR: Remove try/catch when images are complete
   try {
     var characterImage = require(`../assets/images/${character.name}.jpg`);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
+
 
   return (
     <div id="character-details">
       <div id="character-info">
-        <h1>{character.name}</h1>
 
-        <Link to={`/${character.id}/overview`}>Overview</Link>
-        <Link to={`/${character.id}/moves`}>Moves</Link>
-        <Link to={`/${character.id}/changelog`}>Changelog</Link>
+        <h1 id="character-name">{character.name}</h1>
+
+        <div className="character-links">
+          <Link to={`/${character.id}/overview`}>Overview</Link>
+          <Link to={`/${character.id}/moves`}>Moves</Link>
+          <Link to={`/${character.id}/changelog`}>Changelog</Link>
+        </div>
 
       </div>
-      {/* TODO: figure out how to handle non-existant images */}
+      {/* TODO: fix image appearance */}
       {/* <img id="character-image"src={`${characterImage}`} alt={`${character.name}`}></img> */}
+      <Outlet />
     </div>
   );
 }
