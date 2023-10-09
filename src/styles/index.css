@@ -28,18 +28,21 @@ body {
 }
 
 @font-face {
-  font-family: 'Light';
-  src: local('Badaboom') url('../assets//fonts/BADABB__.TTF') format('truetype');
+  font-family: 'Badaboom';
+  src: local('Badaboom'),
+    url('../assets//fonts/BADABB__.TTF') format('truetype');
 }
 
 h1,
 h3 {
   margin: 0px;
   font-family: 'Badaboom';
+  letter-spacing: .15rem;
 }
 
 h2 {
   font-family: 'Badaboom';
+  letter-spacing: .15rem;
   margin: 0.5em;
   align-content: center;
   text-align: center;
@@ -120,20 +123,21 @@ li {
   color: white;
   border: 3px solid white;
   border-radius: 6px;
-  padding: 0.3em;
+  /* padding: 0.3em; */
   margin: 0.5em;
-  height: 2.5em;
+  /* height: 2.5em; */
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Badaboom';
+  font-size: x-large;
 }
 
 a {
   text-decoration: none;
 }
 
-/* TODO: make image align to right side and look good*/
+/* TODO: (Styling) make image align to right side and look good*/
 #character-details img {
   border: 1px solid white;
   /* width: 200px; */
@@ -164,7 +168,7 @@ a {
   border: 2px solid lawngreen;
 }
 
-/* TODO: style buttons for when images exist */
+/* TODO: (Styling) style buttons for when images exist */
 .controller-button-inputs {
   display: flex;
   flex-direction: row;

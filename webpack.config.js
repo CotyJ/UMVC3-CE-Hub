@@ -46,13 +46,24 @@ module.exports = {
         type: 'asset/resource',
       },
 
+      {
+        test: /\.(eot|svg|ttf|woff|woff2?)$/,
+        use: {
+            loader: 'file-loader'
+            , options: {
+                name: '../css/fonts/[name]-[hash:8].[ext]'
+            }
+        },
+      },
+
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack App',
+      title: 'UMVC3 CE Info Page',
       filename: 'index.html',
       template: 'src/index.html',
+      favicon: "./src/assets/favicon.ico",
     }),
   ],
   resolve: {
