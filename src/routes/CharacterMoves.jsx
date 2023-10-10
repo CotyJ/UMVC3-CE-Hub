@@ -3,6 +3,8 @@ import React from 'react';
 export default function CharacterMoves({ moves }) {
   const { assists, command_normals, health, hypers, specials } = moves;
 
+  // TODO: (Data Entry) Add empty properties to all characters for missing props (assists, etc)
+
   return (
     <div>
       <div className="health">
