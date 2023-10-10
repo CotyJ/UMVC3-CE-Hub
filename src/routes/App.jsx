@@ -17,8 +17,14 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout characterData={characterData} />}>
-          {characterData.map((character) => (<Route  key={character.id} path={`/${character.id}`} element={ <CharacterDetails character={character}
+        <Route path="/" element={<Layout characterData={characterData} errorElement={ErrorPage}/>}>
+          {characterData.map((character) => (
+            <Route
+              key={character.id}
+              path={`/${character.id}`}
+              element={
+                <CharacterDetails
+                  character={character}
                   errorElement={ErrorPage}
                 />
               }
@@ -27,17 +33,22 @@ export default function App() {
                 index
                 key={character.id}
                 path={`/${character.id}/overview`}
-                element={<CharacterOverview overview={character.overview} author={character.author}/>}
+                element={
+                  <CharacterOverview
+                    overview={character.overview}
+                    author={character.author}
+                  />
+                }
               ></Route>
               <Route
                 key={character.id}
                 path={`/${character.id}/moves`}
-                element={<CharacterMoves moves={character.moves}/>}
+                element={<CharacterMoves moves={character.moves} />}
               ></Route>
               <Route
                 key={character.id}
                 path={`/${character.id}/changelog`}
-                element={<CharacterChangelog changelog={character.changelog}/>}
+                element={<CharacterChangelog changelog={character.changelog} />}
               ></Route>
             </Route>
           ))}
