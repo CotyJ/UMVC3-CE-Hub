@@ -13,7 +13,9 @@ export default function CharacterSidebar({ characterData }) {
     <>
       <div id="character-selector">
         <div>
-          <h2 id="marvel">Marvel</h2>
+          <h2 id="marvel" className="character-tile">
+            Marvel
+          </h2>
           <ul>
             {marvelCharacters.map((character) => (
               <li key={character.name}>
@@ -24,7 +26,7 @@ export default function CharacterSidebar({ characterData }) {
             ))}
           </ul>
 
-          <h2 id="capcom">Capcom</h2>
+          <h2 id="capcom" className="character-tile">Capcom</h2>
           <ul>
             {capcomCharacters.map((character) => (
               <li key={character.name}>
