@@ -19,9 +19,9 @@ export default function CharacterMoves({ moves }) {
 
       <div className="assists">
         <h2 id='assists-banner'>Assists</h2>
-        <div className='move-name'>{assists[0]}</div>
-        <div className='move-name'>{assists[1]}</div>
-        <div className='move-name'>{assists[2]}</div>
+        <div className='move-details move-name'>{assists[0]}</div>
+        <div className='move-details move-name'>{assists[1]}</div>
+        <div className='move-details move-name'>{assists[2]}</div>
       </div>
 
       <div className="command-normals">

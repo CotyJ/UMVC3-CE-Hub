@@ -37,38 +37,25 @@ body {
 h1 {
   margin: 0px;
   font-family: 'Badaboom';
-  letter-spacing: 0.15rem;
-  font-size: xx-large;
+  letter-spacing: 0.2rem;
+  font-size: xxx-large;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
 h2 {
   font-family: 'Badaboom';
   letter-spacing: 0.15rem;
-  /* margin: 0.5em; */
   align-content: center;
   text-align: center;
   background-color: black;
-  padding: .1em;
+  padding: 0.1em;
+  letter-spacing: 0.25rem;
+  font-size: xx-large;
+  border-radius: 4px;
 
-  letter-spacing: 0.1rem;
-
-
-  /* border-radius: 6px; */
-
-  /* text-shadow: 2px 2px 2px #000000; */
-
-  text-shadow:
-  2px 2px 0 #000,  /* Right and down for darker shadow */
-  -2px -2px 0 #000, /* Left and up for darker shadow */
-  2px -2px 0 #000,  /* Right and up for darker shadow */
-  -2px 2px 0 #000,  /* Left and down for darker shadow */
-  2px 0 0 #000,     /* Right for horizontal shadow */
-  -2px 0 0 #000,    /* Left for horizontal shadow */
-  0 2px 0 #000,     /* Down for vertical shadow */
-  0 -2px 0 #000;    /* Up for vertical shadow */
-
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black; */
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
 img {
@@ -90,43 +77,35 @@ img {
 #character-details {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  opacity: 0.9;
   width: 80vw;
-  /* height: 80vh; */
   padding: 1em;
   overflow-y: scroll;
 }
-
+/*
 #character-details::-webkit-scrollbar {
   display: none;
-}
-
-/* TODO: (Styling) make image align to right side and look good*/
-#character-details img {
-  /* border: 1px solid white; */
-  /* width: 200px; */
-}
+} */
 
 #character-selector {
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
   color: white;
-  /* opacity: 0.9; */
   width: 15em;
   overflow-y: scroll;
   max-height: 80vh;
   -ms-overflow-style: none;
-  scrollbar-width: none;
-
+  /* scrollbar-width: none; */
   scroll-snap-type: y proximity;
+  padding-bottom: 2em;
+  padding-right: 0.8em;
 }
 
-#character-selector::-webkit-scrollbar {
+/* #character-selector::-webkit-scrollbar {
   display: none;
-}
+} */
 
 #outlet {
   width: 100px;
@@ -142,6 +121,8 @@ li {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+  -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
 .character-tile {
@@ -149,22 +130,16 @@ li {
   color: white;
   border: 2px solid white;
   border-radius: 6px;
-  /* padding: 0.3em; */
+  padding: 0.3em;
   margin: 0.5em;
-  /* height: 2.5em; */
   text-align: center;
   align-items: center;
   justify-content: center;
   font-family: 'Badaboom';
   font-size: x-large;
   text-shadow: 1px 1px 1px 1px black;
-
-  /* aligns scroll to top item */
   scroll-snap-align: start;
-}
-
-.character-tile:hover {
-
+  letter-spacing: .1rem;
 }
 
 a {
@@ -176,27 +151,6 @@ a {
   flex-direction: column;
 }
 
-.health {
-  /* border: 2px solid red; */
-}
-
-.assists {
-  /* border: 2px solid yellow; */
-}
-
-.command-normals {
-  /* border: 2px solid blueviolet; */
-}
-
-.special-moves {
-  /* border: 2px solid green; */
-}
-
-.hyper-combos {
-  /* border: 2px solid lawngreen; */
-}
-
-
 .controller-input-button img {
   padding: 1px;
   width: auto;
@@ -204,54 +158,84 @@ a {
   border-radius: 2px;
 }
 
-
 #assists-banner {
-  background-color: rgb(58, 207, 237);
+  background-color: rgba(160, 0, 166);
 }
 
 #command-normals-banner {
-  background-color: blue;
+  background-color: rgb(255, 0, 106);
 }
 
 #special-moves-banner {
-  background-color: yellow;
+  background-color: rgb(58, 237, 58);
 }
 
 #hyper-moves-banner {
-  background-color: red;
+  background-color: rgb(58, 207, 237);
 }
 
 #marvel {
-  border: 2px solid rgb(255, 44, 44);
+  border: 2px solid rgb(110, 0, 0);
   background-color: rgb(188, 0, 0);
-  border-radius: 4px;
+  box-shadow: inset 0px 0px 3px 3px rgb(110, 0, 0);
+  border-radius: 6px;
+  letter-spacing: .2rem;
+  font-size: xx-large;
 }
 
 #capcom {
-  border: 2px solid rgb(62, 62, 249);
+  border: 2px solid rgb(6, 0, 167);
   background-color: rgb(0, 0, 219);
-  border-radius: 4px;
+  box-shadow: inset 0px 0px 3px 3px rgb(6, 0, 167);
+  border-radius: 6px;
+  letter-spacing: .25rem;
+  font-size: xx-large;
 }
 
-.move-details{
+.move-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1em;
 }
 
-.move-name{
+.move-name {
   font-family: 'Badaboom';
+  font-size: x-large;
   letter-spacing: 0.05rem;
 }
 
-/* TODO: (Styling) style buttons for when images exist */
 .controller-button-inputs {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
 }
 
-#character-moves > *{
+#character-moves > * {
   margin-bottom: 1em;
+}
+
+.character-links {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 2em;
+  border-radius: 6px;
+}
+
+#character-name {
+  align-items: center;
+  height: 5rem;
+}
+
+.character-links a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Badaboom';
+  color: white;
+  font-size: xx-large;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
