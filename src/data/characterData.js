@@ -192,7 +192,7 @@ const characterData = [
     author: 'Tabs',
     image: '',
     moves: {
-      health: '1,000,000',
+      health: 1000000,
       assists: ['Shoryuken', 'Hadouken', 'Tatsumaki Senpukyaku'],
       command_normals: [
         {
@@ -226,15 +226,15 @@ const characterData = [
         { name: 'Shoryureppa', input: ['2', '3', '6', '+', 'A', 'A'] },
         {
           name: 'Guren Senpukyaku (Air Ok)',
-          input: ['2', '3', '6', '+', 'A', 'A'],
+          input: ['2', '1', '4', '+', 'A', 'A'],
         },
         {
           name: 'Shippu Jinrai Ken (L/M/H Have Different Variations)',
-          input: ['2', '3', '6', '+', 'A', 'A'],
+          input: ['4', '2', '1', '+', 'A', 'A'],
         },
         {
           name: 'Hadouken (Level 3 Hyper Combo)',
-          input: ['2', '3', '6', '+', 'A', 'A'],
+          input: ['6', '2', '3', '+', 'A', 'A'],
         },
         // {},
       ],
