@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  overflow: hidden;
 }
 
 html {
@@ -33,30 +34,41 @@ body {
     url('../assets//fonts/BADABB__.TTF') format('truetype');
 }
 
-h1,
-h3 {
+h1 {
   margin: 0px;
   font-family: 'Badaboom';
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
+  font-size: xx-large;
 }
 
 h2 {
   font-family: 'Badaboom';
-  letter-spacing: .15rem;
-  margin: 0.5em;
+  letter-spacing: 0.15rem;
+  /* margin: 0.5em; */
   align-content: center;
   text-align: center;
   background-color: black;
-}
+  padding: .1em;
 
-#marvel {
-  border: 2px solid Red;
-  border-radius: 4px;
-}
+  letter-spacing: 0.1rem;
 
-#capcom {
-  border: 2px solid blue;
-  border-radius: 4px;
+
+  /* border-radius: 6px; */
+
+  /* text-shadow: 2px 2px 2px #000000; */
+
+  text-shadow:
+  2px 2px 0 #000,  /* Right and down for darker shadow */
+  -2px -2px 0 #000, /* Left and up for darker shadow */
+  2px -2px 0 #000,  /* Right and up for darker shadow */
+  -2px 2px 0 #000,  /* Left and down for darker shadow */
+  2px 0 0 #000,     /* Right for horizontal shadow */
+  -2px 0 0 #000,    /* Left for horizontal shadow */
+  0 2px 0 #000,     /* Down for vertical shadow */
+  0 -2px 0 #000;    /* Up for vertical shadow */
+
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
 }
 
 img {
@@ -77,12 +89,24 @@ img {
 
 #character-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: black;
   color: white;
   opacity: 0.9;
   width: 80vw;
-  height: 80vh;
+  /* height: 80vh; */
+  padding: 1em;
+  overflow-y: scroll;
+}
+
+#character-details::-webkit-scrollbar {
+  display: none;
+}
+
+/* TODO: (Styling) make image align to right side and look good*/
+#character-details img {
+  /* border: 1px solid white; */
+  /* width: 200px; */
 }
 
 #character-selector {
@@ -90,12 +114,14 @@ img {
   flex-direction: column;
   scroll-behavior: smooth;
   color: white;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   width: 15em;
   overflow-y: scroll;
   max-height: 80vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  scroll-snap-type: y proximity;
 }
 
 #character-selector::-webkit-scrollbar {
@@ -105,7 +131,7 @@ img {
 #outlet {
   width: 100px;
   height: 100px;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 #logo {
@@ -121,7 +147,7 @@ li {
 .character-tile {
   background-color: rgb(43, 43, 43);
   color: white;
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 6px;
   /* padding: 0.3em; */
   margin: 0.5em;
@@ -131,16 +157,18 @@ li {
   justify-content: center;
   font-family: 'Badaboom';
   font-size: x-large;
+  text-shadow: 1px 1px 1px 1px black;
+
+  /* aligns scroll to top item */
+  scroll-snap-align: start;
+}
+
+.character-tile:hover {
+
 }
 
 a {
   text-decoration: none;
-}
-
-/* TODO: (Styling) make image align to right side and look good*/
-#character-details img {
-  border: 1px solid white;
-  /* width: 200px; */
 }
 
 .character-info {
@@ -149,34 +177,81 @@ a {
 }
 
 .health {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .assists {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .command-normals {
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
 }
 
 .special-moves {
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .hyper-combos {
-  border: 2px solid lawngreen;
+  /* border: 2px solid lawngreen; */
+}
+
+
+.controller-input-button img {
+  padding: 1px;
+  width: auto;
+  height: 1.8rem;
+  border-radius: 2px;
+}
+
+
+#assists-banner {
+  background-color: rgb(58, 207, 237);
+}
+
+#command-normals-banner {
+  background-color: blue;
+}
+
+#special-moves-banner {
+  background-color: yellow;
+}
+
+#hyper-moves-banner {
+  background-color: red;
+}
+
+#marvel {
+  border: 2px solid rgb(255, 44, 44);
+  background-color: rgb(188, 0, 0);
+  border-radius: 4px;
+}
+
+#capcom {
+  border: 2px solid rgb(62, 62, 249);
+  background-color: rgb(0, 0, 219);
+  border-radius: 4px;
+}
+
+.move-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.move-name{
+  font-family: 'Badaboom';
+  letter-spacing: 0.05rem;
 }
 
 /* TODO: (Styling) style buttons for when images exist */
 .controller-button-inputs {
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
 }
 
-.controller-input-button {
-  padding: 1px;
-  /* margin: 1px; */
-  border: 1px solid white;
-  border-radius: 2px;
+#character-moves > *{
+  margin-bottom: 1em;
 }
