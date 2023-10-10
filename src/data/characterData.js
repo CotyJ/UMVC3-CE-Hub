@@ -195,23 +195,47 @@ const characterData = [
       health: '1,000,000',
       assists: ['Shoryuken', 'Hadouken', 'Tatsumaki Senpukyaku'],
       command_normals: [
-        { name: 'Inazuma Kick', input: ['6', '+', 'M'] },
-        { name: 'Roundhouse Kick', input: ['6', '+', 'H'] },
+        {
+          name: 'Inazuma Kick',
+          input: ['6', '+', 'M'],
+          description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        },
+        {
+          name: 'Roundhouse Kick',
+          input: ['6', '+', 'H'],
+          description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        },
       ],
       specials: [
-        { name: 'Hadouken (Air Ok)', input: ['2', '3', '6', '+', 'A'] },
-        { name: 'Tatsumaki Senpukyaku (Air Ok)', input: ['2', '1', '4', '+', 'A'] },
+        {
+          name: 'Hadouken (Air Ok)',
+          input: ['2', '3', '6', '+', 'A'],
+          description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        },
+        {
+          name: 'Tatsumaki Senpukyaku (Air Ok)',
+          input: ['2', '1', '4', '+', 'A'],
+          description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        },
         { name: 'Shoryuken (Air Ok)', input: ['6', '2', '3', '+', 'A'] },
         { name: 'Quick Step', input: ['A', '+', 'S'] },
       ],
       hypers: [
         { name: 'Shoryureppa', input: ['2', '3', '6', '+', 'A', 'A'] },
-        { name: 'Guren Senpukyaku (Air Ok)', input: ['2', '3', '6', '+', 'A', 'A'] },
+        {
+          name: 'Guren Senpukyaku (Air Ok)',
+          input: ['2', '3', '6', '+', 'A', 'A'],
+        },
         {
           name: 'Shippu Jinrai Ken (L/M/H Have Different Variations)',
           input: ['2', '3', '6', '+', 'A', 'A'],
         },
-        { name: 'Hadouken (Level 3 Hyper Combo)', input: ['2', '3', '6', '+', 'A', 'A'] },
+        {
+          name: 'Hadouken (Level 3 Hyper Combo)',
+          input: ['2', '3', '6', '+', 'A', 'A'],
+        },
         // {},
       ],
     },
@@ -309,8 +333,8 @@ const characterData = [
     changelog: [],
   },
   {
-    name: 'Phoenix Wright and Maya',
-    id: 'Phoenix Wright and Maya',
+    name: 'Phoenix W. & Maya',
+    id: 'phoenix_maya',
     series: 'capcom',
     author: 'Tabs',
     image: '',
@@ -358,7 +382,7 @@ const characterData = [
     changelog: [],
   },
   {
-    name: 'STARS Chris',
+    name: 'S.T.A.R.S. Chris',
     id: 'STARS Chris',
     series: 'capcom',
     author: 'Tabs',
@@ -368,7 +392,7 @@ const characterData = [
     changelog: [],
   },
   {
-    name: 'STARS Jill',
+    name: 'S.T.A.R.S. Jill',
     id: 'STARS Jill',
     series: 'capcom',
     author: 'EX',
@@ -378,7 +402,7 @@ const characterData = [
     changelog: [],
   },
   {
-    name: 'STARS Wesker',
+    name: 'S.T.A.R.S. Wesker',
     id: 'STARS Wesker',
     series: 'capcom',
     author: 'Tabs',
