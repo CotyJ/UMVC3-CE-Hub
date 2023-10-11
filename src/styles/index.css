@@ -50,10 +50,8 @@ h2 {
   text-align: center;
   background-color: black;
   padding: 0.1em;
-  letter-spacing: 0.25rem;
   font-size: xx-large;
   border-radius: 4px;
-
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
     -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
@@ -122,7 +120,7 @@ li {
   padding: 0;
   margin: 0;
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
-  -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
+    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
 .character-tile {
@@ -136,10 +134,10 @@ li {
   align-items: center;
   justify-content: center;
   font-family: 'Badaboom';
-  font-size: x-large;
+  font-size: large;
   text-shadow: 1px 1px 1px 1px black;
   scroll-snap-align: start;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 a {
@@ -179,7 +177,7 @@ a {
   background-color: rgb(188, 0, 0);
   box-shadow: inset 0px 0px 3px 3px rgb(110, 0, 0);
   border-radius: 6px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: xx-large;
 }
 
@@ -188,7 +186,7 @@ a {
   background-color: rgb(0, 0, 219);
   box-shadow: inset 0px 0px 3px 3px rgb(6, 0, 167);
   border-radius: 6px;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   font-size: xx-large;
 }
 
@@ -197,10 +195,19 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1em;
-}
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
+  align-content: center;
+  align-items: center;
+
+    /* REVIEW: decide whether to keep style below */
+    /* background-color: gray; */
+    /* padding: .4em; */
+    /* border-radius: 4px; */
+  }
 
 .move-name {
-  font-family: 'Badaboom';
+  font-family: 'Roboto Condensed';
   font-size: x-large;
   letter-spacing: 0.05rem;
 }
@@ -216,13 +223,14 @@ a {
 }
 
 .character-links {
-  background-color: gray;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   margin-bottom: 2em;
   border-radius: 6px;
+  flex-wrap: wrap;
+  gap: .5em;
 }
 
 #character-name {
@@ -231,11 +239,60 @@ a {
 }
 
 .character-links a {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-family: 'Badaboom';
+  background-color: white;
+  box-shadow: -5px 5px 0px black;
   color: white;
+  clip-path: polygon(100% 0px, 0% 0px, 35px 100%, 100% 100%);
+  font-family: 'Badaboom';
   font-size: xx-large;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  padding-left: 8vw;
+  position: relative;
+  text-align: end;
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
-    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
+  -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
+  overflow: hidden;
+  min-width: 22vw;
+  max-width: 40vw;
+
+}
+
+.character-links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgb(255, 255, 255), transparent); /* Swap to left */
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0s ease;
+  z-index: -1;
+}
+
+.character-links a:hover::before {
+  transform: scaleX(2);
+}
+
+.character-links a:hover {
+  animation: gradientAnimation 1.5s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: black;
+    /* background: white; */
+  }
+  50% {
+    background: white;
+    /* background: black; */
+  }
+  100% {
+    background: black;
+    /* background: white; */
+  }
 }
