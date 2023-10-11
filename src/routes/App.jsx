@@ -1,12 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
-// import CharacterSidebar from './CharacterSidebar';
-// import Header from './Header';
 import ErrorPage from '../ErrorPage';
 import Layout from './Layout';
 import CharacterDetails from './CharacterDetails';
-
 import CharacterOverview from './CharacterOverview';
 import CharacterMoves from './CharacterMoves';
 import CharacterChangelog from './CharacterChangelog';
