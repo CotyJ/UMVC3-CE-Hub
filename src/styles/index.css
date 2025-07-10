@@ -36,6 +36,7 @@ body {
 
 h1 {
   margin: 0px;
+  padding: 0px;
   font-family: 'Badaboom';
   letter-spacing: 0.2rem;
   font-size: xxx-large;
@@ -80,11 +81,13 @@ img {
   width: 80vw;
   padding: 1em;
   overflow-y: scroll;
+  scrollbar-width: none;
+
 }
-/*
+
 #character-details::-webkit-scrollbar {
   display: none;
-} */
+}
 
 #character-selector {
   display: flex;
@@ -115,7 +118,7 @@ img {
   width: 15em;
 }
 
-li {
+#character-selector li {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -123,11 +126,12 @@ li {
     -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
+/* TODO: (Add Feature) add double yellow square glow like CSS */
 .character-tile {
   background-color: rgb(43, 43, 43);
   color: white;
-  border: 2px solid white;
-  border-radius: 6px;
+  border: 1px solid white;
+  border-radius: 2px;
   padding: 0.3em;
   margin: 0.5em;
   text-align: center;
@@ -138,6 +142,34 @@ li {
   text-shadow: 1px 1px 1px 1px black;
   scroll-snap-align: start;
   letter-spacing: 0.1rem;
+  position: relative;
+}
+.character-tile:hover {
+  border: 1px solid yellow;
+}
+
+.character-tile:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: yellow;
+  animation: tile-glow 1s infinite;
+  z-index: -1;
+}
+
+@keyframes tile-glow {
+  0% {
+    box-shadow: 0 0 5px yellow;
+  }
+  50% {
+    box-shadow: 0 0 7px yellow, 0 0 7px yellow;
+  }
+  100% {
+    box-shadow: 0 0 5px yellow;
+  }
 }
 
 a {
@@ -161,14 +193,17 @@ a {
 }
 
 #command-normals-banner {
+  margin-top: 1.2em;
   background-color: rgb(255, 0, 106);
 }
 
 #special-moves-banner {
+  margin-top: 1.2em;
   background-color: rgb(58, 237, 58);
 }
 
 #hyper-moves-banner {
+  margin-top: 1.2em;
   background-color: rgb(58, 207, 237);
 }
 
@@ -200,11 +235,11 @@ a {
   align-content: center;
   align-items: center;
 
-    /* REVIEW: decide whether to keep style below */
-    /* background-color: gray; */
-    /* padding: .4em; */
-    /* border-radius: 4px; */
-  }
+  /* REVIEW: decide whether to keep style below */
+  /* background-color: gray; */
+  /* padding: .4em; */
+  /* border-radius: 4px; */
+}
 
 .move-name {
   font-family: 'Roboto Condensed';
@@ -230,12 +265,14 @@ a {
   margin-bottom: 2em;
   border-radius: 6px;
   flex-wrap: wrap;
-  gap: .5em;
+  gap: 0.5em;
+  max-width: 100%;
 }
 
 #character-name {
   align-items: center;
   height: 5rem;
+  margin: 0px;
 }
 
 .character-links a {
@@ -248,26 +285,29 @@ a {
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  padding: 0.3rem;
+  min-width: 22vw;
+  max-width: 40vw;
+  overflow: hidden;
+  padding: 0.4rem;
   padding-left: 8vw;
   position: relative;
   text-align: end;
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
-  -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
-  overflow: hidden;
-  min-width: 22vw;
-  max-width: 40vw;
-
+    -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
 .character-links a::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to left, rgb(255, 255, 255), transparent); /* Swap to left */
+  background: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    transparent
+  ); /* Swap to left */
   transform-origin: left;
   transform: scaleX(0);
   transition: transform 0s ease;
@@ -295,4 +335,83 @@ a {
     background: black;
     /* background: white; */
   }
+}
+
+.character-thumbnail {
+  height: 4rem;
+  width: auto;
+  clip-path: polygon(66.66% 0px, 0% 0px, 25px 100%, 100% 100%);
+}
+
+/* .health-bar-container {
+  display: flex;
+  justify-self: center;
+  width: 50vw;
+  flex-direction: row;
+  background-color: aqua;
+  height: 4.4rem;
+  clip-path: polygon(95% 0px, 0% 0px, 20px 100%, 100% 100%);
+} */
+
+/* .health-bar {
+  height: 4rem;
+  width: 50vw;
+  clip-path: polygon(95% 0px, 0% 0px, 20px 100%, 100% 100%);
+  flex: 1;
+  background-color: red;
+  background-image: linear-gradient(to right, orange, cyan);
+} */
+
+.assist-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.assist-container .move-name {
+  margin: 0;
+}
+
+.assist-image {
+  width: auto;
+  height: 100%;
+  max-height: 100%;
+}
+
+.overview-text {
+  font-family: 'Roboto Condensed';
+}
+
+.character-gif{
+  height: 60vh;
+  width: auto;
+  border: 3px solid white;
+  border-radius: 4px;
+}
+
+.overview-info{
+  min-width: 40%;
+}
+
+#character-overview-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.changelog-text{
+  font-family: 'Roboto Condensed';
+  display: flex;
+  flex-direction: column;
+}
+
+.changelog-text ul{
+  margin-bottom: 2rem;
+}
+
+
+.changelog-text li{
+  list-style-type: none;
+  padding: 0;
+  margin-left: 1rem;
 }

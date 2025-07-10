@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import ErrorPage from '../ErrorPage';
 import Layout from './Layout';
@@ -14,7 +14,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout characterData={characterData} errorElement={ErrorPage}/>}>
+        {/* //BUG: ErrorPage does not work */}
+        <Route path="/" element={<Layout characterData={characterData} />} errorElement={<ErrorPage/>}>
           {characterData.map((character) => (
             <Route
               key={character.id}
@@ -22,9 +23,9 @@ export default function App() {
               element={
                 <CharacterDetails
                   character={character}
-                  errorElement={ErrorPage}
-                />
-              }
+                  />
+                }
+                errorElement={<ErrorPage/>}
             >
               <Route
                 index
@@ -34,13 +35,14 @@ export default function App() {
                   <CharacterOverview
                     overview={character.overview}
                     author={character.author}
+                    id={character.id}
                   />
                 }
               ></Route>
               <Route
                 key={character.id}
                 path={`/${character.id}/moves`}
-                element={<CharacterMoves moves={character.moves} />}
+                element={<CharacterMoves moves={character.moves} name={character.name}/>}
               ></Route>
               <Route
                 key={character.id}
@@ -50,6 +52,7 @@ export default function App() {
             </Route>
           ))}
         </Route>
+        <Route path="/*" element={<ErrorPage/>} />
       </Routes>
     </BrowserRouter>
   );

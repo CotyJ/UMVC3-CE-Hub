@@ -1,3 +1,4 @@
+  // TODO: (Data Entry) Add empty properties to all characters for missing props (assists, etc)
 const characterData = [
   {
     name: 'Asura',
@@ -187,7 +188,7 @@ const characterData = [
   },
   {
     name: 'Ken',
-    id: 'Ken',
+    id: 'ken',
     series: 'capcom',
     author: 'Tabs',
     image: '',
@@ -239,8 +240,15 @@ const characterData = [
         // {},
       ],
     },
-    overview: 'Lorem ipsum dolor sit',
-    changelog: [],
+    overview: 'Ken returns to Marvel vs. Capcom!',
+    changelog: [
+      {"Latest": [
+        "-damage on normals generally reduced",
+        "-reduced distance that ground L and M tatsu travels",
+        "-reduced per-hit damage on rising kicks all ground tatsus (L: 38k per hit->35k, M: 23k per hit->22l, H:25k->24k)",
+        "-added 5f recovery to grounded guren(qcb+2atk)",
+      ]},
+    ],
   },
   {
     name: 'King Thor',
