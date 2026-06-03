@@ -1,0 +1,825 @@
+[
+  {
+    "name": "Asura",
+    "id": "asura",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Batsu",
+    "id": "batsu",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Shadow Lady",
+    "id": "shadow_lady",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Evil Ryu",
+    "id": "evil_ryu",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Lilith",
+    "id": "lilith",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Orange Hulk",
+    "id": "orange_hulk",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "All New Wolverine",
+    "id": "all_new_wolverine",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "S.T.A.R.S. Wesker",
+    "id": "stars_wesker",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Red She‑Hulk",
+    "id": "red_she_hulk",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Phoenix & Maya",
+    "id": "phoenix_maya",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Captain Marvel",
+    "id": "captain_marvel",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "MVC2 Sentinel",
+    "id": "mvc2_sentinel",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Shin Akuma",
+    "id": "shin_akuma",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Chris (S.T.A.R.S.)",
+    "id": "stars_chris",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Ken",
+    "id": "ken",
+    "series": "capcom",
+    "author": "Tabs",
+    "image": "",
+    "moves": {
+      "health": 1000000,
+      "assists": ["Shoryuken", "Hadouken", "Tatsumaki Senpukyaku"],
+      "command_normals": [
+        {
+          "name": "Inazuma Kick",
+          "input": "6+M",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "name": "Roundhouse Kick",
+          "input": "6+H",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "specials": [
+        {
+          "name": "Hadouken (Air Ok)",
+          "input": "236+A",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "name": "Tatsumaki Senpukyaku (Air Ok)",
+          "input": "214+A",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "name": "Shoryuken (Air Ok)",
+          "input": "623+A"
+        },
+        {
+          "name": "Quick Step",
+          "input": "A+S"
+        }
+      ],
+      "hypers": [
+        {
+          "name": "Shoryureppa",
+          "input": "236+AA"
+        },
+        {
+          "name": "Guren Senpukyaku (Air Ok)",
+          "input": "214+AA"
+        },
+        {
+          "name": "Shippu Jinrai Ken (L/M/H Have Different Variations)",
+          "input": "421+AA"
+        },
+        {
+          "name": "Hadouken (Level 3 Hyper Combo)",
+          "input": "623+AA"
+        }
+      ]
+    },
+    "overview": "Ken returns to Marvel vs. Capcom!",
+    "changelog": [
+      {
+        "Latest": [
+          "-damage on normals generally reduced",
+          "-reduced distance that ground L and M tatsu travels",
+          "-reduced per-hit damage on rising kicks all ground tatsus (L: 38k per hit->35k, M: 23k per hit->22l, H:25k->24k)",
+          "-added 5f recovery to grounded guren(qcb+2atk)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DMC 1 Dante",
+    "id": "dmc1_dante",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Rashid",
+    "id": "rashid",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Monster Hunter",
+    "id": "monster_hunter",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "HUNK",
+    "id": "hunk",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Cammy",
+    "id": "cammy",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Guile",
+    "id": "guile",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Charlie",
+    "id": "charlie",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Leon",
+    "id": "leon",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Krauser",
+    "id": "krauser",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Jake",
+    "id": "jake",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Sherry",
+    "id": "sherry",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Sakura",
+    "id": "sakura",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Talbain",
+    "id": "talbain",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Mega Man X",
+    "id": "megaman_x",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Servbot",
+    "id": "servbot",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Dan Hibiki",
+    "id": "dan_hibiki",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Gloria",
+    "id": "gloria",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "DMC5 Vergil",
+    "id": "dmc5_vergil",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Nero",
+    "id": "nero",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Strider 2099",
+    "id": "strider_2099",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "M. Bison",
+    "id": "m_bison",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Hinata",
+    "id": "hinata",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Hayato",
+    "id": "hayato",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Kyosuke",
+    "id": "kyosuke",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Saki",
+    "id": "saki",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Yun",
+    "id": "yun",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Bad Box Art Mega Man",
+    "id": "bad_box_art_megaman",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Juri",
+    "id": "juri",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+
+  {
+    "name": "Cyclops",
+    "id": "cyclops",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Jean Grey",
+    "id": "jean_grey",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Thanos",
+    "id": "thanos",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Psylocke",
+    "id": "psylocke",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Ultron",
+    "id": "ultron",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Moonstone",
+    "id": "moonstone",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Bishop",
+    "id": "bishop",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Iceman",
+    "id": "iceman",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Gambit",
+    "id": "gambit",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Venom",
+    "id": "venom",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Carnage",
+    "id": "carnage",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Shocker",
+    "id": "shocker",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Blackheart",
+    "id": "blackheart",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "King Thor",
+    "id": "king_thor",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Stranger",
+    "id": "stranger",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "US Agent",
+    "id": "us_agent",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Clea",
+    "id": "clea",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "The Thing",
+    "id": "the_thing",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Colossus",
+    "id": "colossus",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Onslaught",
+    "id": "onslaught",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Carter Slade",
+    "id": "carter_slade",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "War Machine",
+    "id": "war_machine",
+    "series": "marvel",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "DMC5 Vergil",
+    "id": "dmc5_vergil_marvel",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Nero (DMC)",
+    "id": "nero_marvel",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Strider 2099 (Marvel/Capcom?)",
+    "id": "strider_2099_marvel",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "M. Bison (Reworked)",
+    "id": "m_bison_reworked",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Hinata",
+    "id": "hinata_capcom",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Hayato",
+    "id": "hayato_capcom",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Kyosuke",
+    "id": "kyosuke_capcom",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Saki",
+    "id": "saki_capcom",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Yun",
+    "id": "yun_capcom",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Bad Box Art Mega Man",
+    "id": "bad_box_art_mega_man",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  },
+  {
+    "name": "Juri (Capcom)",
+    "id": "juri_capcom",
+    "series": "capcom",
+    "author": "",
+    "image": "",
+    "moves": { "normals": [], "specials": [], "hypers": [] },
+    "overview": "",
+    "changelog": []
+  }
+]

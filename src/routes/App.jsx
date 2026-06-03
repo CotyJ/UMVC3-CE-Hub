@@ -14,7 +14,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* //BUG: ErrorPage does not work */}
+        {/* // BUG: ErrorPage does not work */}
         <Route path="/" element={<Layout characterData={characterData} />} errorElement={<ErrorPage/>}>
           {characterData.map((character) => (
             <Route
